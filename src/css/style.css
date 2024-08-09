@@ -26,3 +26,6 @@ body {
     background: #c70d0d;
     display: none;
 }
+.stat {
+    padding-right: 10px;
+}
