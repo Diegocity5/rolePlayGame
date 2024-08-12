@@ -28,3 +28,5 @@ function goToCave(){
 function fightDragon(){
     console.log("Fighting Dragon.");
 }
+
+//initialize buttons.
