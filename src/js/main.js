@@ -24,3 +24,7 @@ function goStore(){
 function goToCave(){
     console.log("Going to cave.");
 }
+
+function fightDragon(){
+    console.log("Fighting Dragon.");
+}
