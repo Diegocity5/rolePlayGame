@@ -26,7 +26,7 @@ function goTown(){
     button2.onclick = buyWeapon;
     button3.onclick = goTown;
 
-    text.innerText = "You are in the town square. You see a sign that says Store.";
+    text.innerText = "You are in the town square. You see a sign that says \"Store\".";
 }
 
 function goStore(){
