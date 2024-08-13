@@ -37,7 +37,11 @@ function fightDragon(){
     console.log("Fighting Dragon.");
 }
 
+function buyHealth(){}
+function buyWeapon(){}
+function goTown(){}
+
 //initialize buttons.
-.onclick = goStore;
+button1.onclick = goStore;
 button2.onclick = goToCave;
 button3.onclick = fightDragon;
