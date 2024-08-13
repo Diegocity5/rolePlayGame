@@ -20,7 +20,7 @@ const monsterHealthText = document.querySelector('#monsterHealth');
 Deberá crear una estructura de datos que contendrá las diferentes ubicaciones.*/
 const locations = [];
 
-let cat = {};
+let cat = {name: "Mirringo"};
 console.log(cat);
 
 function update(location){
