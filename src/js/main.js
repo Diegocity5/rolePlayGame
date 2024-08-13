@@ -18,15 +18,15 @@ const monsterName = document.querySelector('#monsterHealth');
 const monsterHealthText = document.querySelector('#monsterHealth');
 
 function goTown(){
-    button1.innerText = "Buy 10 health (10 gold)";
-    button2.innerText = "Buy weapon (30 gold)";
-    button3.innerText = "Go to town square";
+    button1.innerText = "Go to store";
+    button2.innerText = "Go to Cave";
+    button3.innerText = "Fight dragon";
 
     button1.onclick = buyHealth;
     button2.onclick = buyWeapon;
     button3.onclick = goTown;
 
-    text.innerText = "You enter the store.";
+    text.innerText = "You are in the town square. You see a sign that says Store.";
 }
 
 function goStore(){
