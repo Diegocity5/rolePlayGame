@@ -25,6 +25,8 @@ function goStore(){
     button1.onclick = buyHealth;
     button2.onclick = buyWeapon;
     button3.onclick = goTown;
+
+    text.innerText = "You enter the store.";
 }
 
 function goToCave(){
@@ -36,6 +38,6 @@ function fightDragon(){
 }
 
 //initialize buttons.
-button1.onclick = goStore;
+.onclick = goStore;
 button2.onclick = goToCave;
 button3.onclick = fightDragon;
