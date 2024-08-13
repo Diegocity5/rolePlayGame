@@ -20,12 +20,6 @@ const monsterHealthText = document.querySelector('#monsterHealth');
 Deberá crear una estructura de datos que contendrá las diferentes ubicaciones.*/
 const locations = [];
 
-let cat = {
-    name: "Mirringo",
-    "Number of legs": 4
-};
-console.log(cat["Number of legs"]);// Si la propiedad del objeto al que intenta acceder tiene un espacio en su nombre, deberá utilizar la notación entre corchetes.
-
 function update(location){
 
 }
