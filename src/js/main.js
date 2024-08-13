@@ -24,7 +24,7 @@ let cat = {
     name: "Mirringo",
     "Number of legs": 4
 };
-console.log(cat.name);//Se utiliza cuando se sabe de antemano que existe dicha propiedad
+console.log(cat["Number of legs"]);// Si la propiedad del objeto al que intenta acceder tiene un espacio en su nombre, deberá utilizar la notación entre corchetes.
 
 function update(location){
 
