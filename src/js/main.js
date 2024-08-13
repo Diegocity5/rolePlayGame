@@ -16,9 +16,12 @@ const goldText = document.querySelector('#goldText');
 const monsterStats = document.querySelector('#monsterStats');
 const monsterName = document.querySelector('#monsterHealth');
 const monsterHealthText = document.querySelector('#monsterHealth');
+/*Podrás visitar diferentes lugares como la tienda, la cueva y la plaza del pueblo.
+Deberá crear una estructura de datos que contendrá las diferentes ubicaciones.*/
+const locations = [];
 
 function update(location){
-    
+
 }
 function goTown(){
     button1.innerText = "Go to store";
