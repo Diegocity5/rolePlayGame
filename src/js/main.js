@@ -24,7 +24,7 @@ let cat = {
     name: "Mirringo",
     "Number of legs": 4
 };
-console.log(cat);
+console.log(cat.name);//Se utiliza cuando se sabe de antemano que existe dicha propiedad
 
 function update(location){
 
