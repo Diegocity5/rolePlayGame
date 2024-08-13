@@ -19,7 +19,10 @@ const monsterHealthText = document.querySelector('#monsterHealth');
 /*Podrás visitar diferentes lugares como la tienda, la cueva y la plaza del pueblo.
 Deberá crear una estructura de datos que contendrá las diferentes ubicaciones.*/
 const locations = [
-    {name: "town square"},
+    {
+        name: "town square",
+        "button text": ["Go to store","Go to cave","Fight dragon"]
+    },
 ];
 
 function update(location){
