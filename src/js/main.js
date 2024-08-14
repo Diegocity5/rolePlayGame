@@ -88,6 +88,7 @@ function buyHealth(){
 function buyWeapon(){
     if(gold >= 30){
         gold -= 30;//Restar cuando se compre un arma
+        currentWeaponIndex += 1;//Alterando para poder acceder al proximo objecto arma
     }
 }
 function fightSlime(){}
