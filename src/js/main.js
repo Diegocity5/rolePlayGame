@@ -93,6 +93,7 @@ function buyWeapon(){
         let newWeapon = weapons[currentWeaponIndex].name;//Estoy accediendo a un arma de mis lista
 
         text.innerText = "You now have a "+newWeapon+"."
+        inventory.push(newWeapon);
     }
 }
 function fightSlime(){}
