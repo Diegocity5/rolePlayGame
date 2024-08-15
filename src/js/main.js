@@ -90,6 +90,8 @@ function buyWeapon(){
         gold -= 30;//Restar cuando se compre un arma
         currentWeaponIndex++;//Alterando para poder acceder al proximo objecto arma
         goldText.innerText = gold;
+        let newWeapon = weapons;
+
         text.innerText = "You now have a new weapon."
     }
 }
