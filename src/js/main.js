@@ -86,7 +86,7 @@ function buyHealth(){
     }
 }
 function buyWeapon(){
-    if(currentWeaponIndex < 3){
+    if(currentWeaponIndex < weapons.length){
         if(gold >= 30){
             gold -= 30;//Restar cuando se compre un arma
             currentWeaponIndex++;//Alterando para poder acceder al proximo objecto arma
