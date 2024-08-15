@@ -86,15 +86,19 @@ function buyHealth(){
     }
 }
 function buyWeapon(){
-    if(gold >= 30){
-        gold -= 30;//Restar cuando se compre un arma
-        currentWeaponIndex++;//Alterando para poder acceder al proximo objecto arma
-        goldText.innerText = gold;
-        let newWeapon = weapons[currentWeaponIndex].name;//Estoy accediendo a un arma de mis lista
-
-        text.innerText = "You now have a "+newWeapon+"."
-        inventory.push(newWeapon);
-        text.innerText += " In your inventory you have: " + inventory;
+    if(currentWeaponIndex < 3){
+        if(gold >= 30){
+            gold -= 30;//Restar cuando se compre un arma
+            currentWeaponIndex++;//Alterando para poder acceder al proximo objecto arma
+            goldText.innerText = gold;
+            let newWeapon = weapons[currentWeaponIndex].name;//Estoy accediendo a un arma de mis lista
+    
+            text.innerText = "You now have a "+newWeapon+"."
+            inventory.push(newWeapon);
+            text.innerText += " In your inventory you have: " + inventory;
+        }else {
+            text.innerText = "You do not have enough gold to buy a weapon";
+        }
     }
 }
 function fightSlime(){}
