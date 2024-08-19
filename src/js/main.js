@@ -105,7 +105,11 @@ function buyWeapon(){
         button2.onclick = sellWeapon;
     }
 }
-function sellWeapon(){}
+function sellWeapon(){
+    if(inventory.length > 1){//Validando que haya mas de una arma
+        
+    }
+}
 function fightSlime(){}
 function fightBeast(){}
 
