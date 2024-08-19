@@ -14,7 +14,7 @@ const xpText = document.querySelector('#xpText');
 const healthText = document.querySelector('#healthText');
 const goldText = document.querySelector('#goldText');
 const monsterStats = document.querySelector('#monsterStats');
-const monsterName = document.querySelector('#monsterHealth');
+const monsterName = document.querySelector('#monsterName');
 const monsterHealthText = document.querySelector('#monsterHealth');
 
 const weapons = [
@@ -141,6 +141,8 @@ function goFight(){
     update(locations[3]);
     monsterHealth = monsters[fighting].health;//Asignando la salud del mostruo actual
     monsterStats.style.display = "block";//Estaba oculto estadisticas del monstruo pero ahora es visible
+    monsterName.innerText = monsters[fighting].name;
+    monsterHealthText.innerText = monsterHealth;
 }
 function attack(){}
 function dodge(){}
