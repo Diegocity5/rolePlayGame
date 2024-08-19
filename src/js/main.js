@@ -124,6 +124,9 @@ function fightBeast(){}
 function fightDragon(){
     console.log("Fighting Dragon.");
 }
+function goFight(){
+    
+}
 
 //initialize buttons.
 button1.onclick = goStore;
