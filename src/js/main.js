@@ -110,6 +110,7 @@ function sellWeapon(){
         gold += 15;
         goldText.innerText = gold;
         let currentWeapon = inventory.shift();//Si vendo una arma tendre que eliminarla de mi inventario
+        text.innerText = "You sold a "+currentWeapon+".";
     }
 }
 function fightSlime(){}
