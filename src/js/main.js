@@ -134,6 +134,8 @@ function fightDragon(){
 function goFight(){
 
 }
+function attack(){}
+function dodge(){}
 
 //initialize buttons.
 button1.onclick = goStore;
