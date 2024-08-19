@@ -123,9 +123,13 @@ function fightSlime(){
     fighting  = 0;
     goFight();
 }
-function fightBeast(){}
+function fightBeast(){
+    fighting = 1;
+    goFight();
+}
 function fightDragon(){
-    console.log("Fighting Dragon.");
+    fighting = 2;
+    goFight();
 }
 function goFight(){
 
