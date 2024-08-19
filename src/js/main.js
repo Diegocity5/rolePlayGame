@@ -139,6 +139,7 @@ function fightDragon(){
 }
 function goFight(){
     update(locations[3]);
+    monsterHealth = monsters[fighting].health;//Asignando la salud del mostruo actual
 }
 function attack(){}
 function dodge(){}
