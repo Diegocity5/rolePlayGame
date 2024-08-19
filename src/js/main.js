@@ -144,7 +144,9 @@ function goFight(){
     monsterName.innerText = monsters[fighting].name;
     monsterHealthText.innerText = monsterHealth;
 }
-function attack(){}
+function attack(){
+    text.innerText = "The "+monsters[fighting].name+" attacks.";
+}
 function dodge(){}
 
 //initialize buttons.
