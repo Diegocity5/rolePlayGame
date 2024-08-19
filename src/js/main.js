@@ -106,10 +106,10 @@ function buyWeapon(){
     }
 }
 function sellWeapon(){
-    let currentWeapon;
     if(inventory.length > 1){//Validando que haya mas de una arma
         gold += 15;
         goldText.innerText = gold;
+        let currentWeapon = inventory.shift();//Si vendo una arma tendre que eliminarla de mi inventario
     }
 }
 function fightSlime(){}
