@@ -1,6 +1,6 @@
 let xp = 0;
 let health = 100;
-let gold = 50;
+let gold = 250;
 let currentWeaponIndex = 0;
 let fighting;
 let monsterHealth;
@@ -92,7 +92,7 @@ function buyWeapon(){
             currentWeaponIndex++;//Alterando para poder acceder al proximo objecto arma
             goldText.innerText = gold;
             let newWeapon = weapons[currentWeaponIndex].name;//Estoy accediendo a un arma de mis lista
-    
+
             text.innerText = "You now have a "+newWeapon+"."
             inventory.push(newWeapon);
             text.innerText += " In your inventory you have: " + inventory;
@@ -106,6 +106,7 @@ function buyWeapon(){
     }
 }
 function sellWeapon(){
+    let currentWeapon;
     if(inventory.length > 1){//Validando que haya mas de una arma
         gold += 15;
         goldText.innerText = gold;
