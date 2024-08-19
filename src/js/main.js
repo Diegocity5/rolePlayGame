@@ -23,6 +23,11 @@ const weapons = [
     {name: "claw hammer", power:50},
     {name: "sword", power:100}
 ];
+const monsters = [
+    {name: "slime", level: 2, health: 15},
+    {name: "fanged beast", level: 8, health: 60},
+    {name: "dragon", level: 20, health: 300}
+];
 /*Podrás visitar diferentes lugares como la tienda, la cueva y la plaza del pueblo.
 Deberá crear una estructura de datos que contendrá las diferentes ubicaciones.*/
 const locations = [
@@ -70,9 +75,6 @@ function goToCave(){
     update(locations[2]);
 }
 
-function fightDragon(){
-    console.log("Fighting Dragon.");
-}
 
 function buyHealth(){
     /*Validando que tenga suficiente dinero para comprar salud*/
@@ -116,8 +118,12 @@ function sellWeapon(){
         text.innerText = "Don't sell your only weapon!";
     }
 }
+
 function fightSlime(){}
 function fightBeast(){}
+function fightDragon(){
+    console.log("Fighting Dragon.");
+}
 
 //initialize buttons.
 button1.onclick = goStore;
