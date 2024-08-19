@@ -107,7 +107,8 @@ function buyWeapon(){
 }
 function sellWeapon(){
     if(inventory.length > 1){//Validando que haya mas de una arma
-        
+        gold += 15;
+        goldText.innerText = gold;
     }
 }
 function fightSlime(){}
