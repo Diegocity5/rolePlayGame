@@ -140,6 +140,7 @@ function fightDragon(){
 function goFight(){
     update(locations[3]);
     monsterHealth = monsters[fighting].health;//Asignando la salud del mostruo actual
+    monsterStats.style.display = "block";//Estaba oculto estadisticas del monstruo pero ahora es visible
 }
 function attack(){}
 function dodge(){}
