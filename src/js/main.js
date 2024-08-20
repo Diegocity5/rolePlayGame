@@ -166,6 +166,8 @@ function dodge(){
 function defeatMonster(){
     gold += monsters[fighting].level * 6.7;//Sumando oro cuando se derrete el monstruo
     xp += monsters[fighting].level;//Sumando experiencia al derrotar un monstruo
+    goldText.innerText = gold;
+    xpText.innerText = xp;
 }
 function lose(){}
 
