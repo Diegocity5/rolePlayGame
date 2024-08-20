@@ -163,7 +163,9 @@ function dodge(){
     text.innerText = "You dodge the attack from the "+ monsters[fighting].name;
 }
 
-function defeatMonster(){}
+function defeatMonster(){
+    gold += monsters[fighting].level * 6.7;//Sumando oro cuando se derrete el monstruo
+}
 function lose(){}
 
 //initialize buttons.
