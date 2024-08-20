@@ -161,6 +161,9 @@ function attack(){
 }
 function dodge(){}
 
+function defeatMonster(){}
+function lose(){}
+
 //initialize buttons.
 button1.onclick = goStore;
 button2.onclick = goToCave;
