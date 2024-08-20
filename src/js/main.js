@@ -177,7 +177,9 @@ function defeatMonster(){
     xpText.innerText = xp;
     update(locations[4]);
 }
-function lose(){}
+function lose(){
+    update(locations[5]);
+}
 
 //initialize buttons.
 button1.onclick = goStore;
