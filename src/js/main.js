@@ -168,6 +168,7 @@ function defeatMonster(){
     xp += monsters[fighting].level;//Sumando experiencia al derrotar un monstruo
     goldText.innerText = gold;
     xpText.innerText = xp;
+    update(locations[4]);
 }
 function lose(){}
 
