@@ -169,7 +169,11 @@ function attack(){
     if(health <= 0){
         lose();
     }else if(monsterHealth <= 0){
-        defeatMonster();
+        if(fighting === 2){//Validando que sea el monstruo dragon
+            wingame();
+        }else{
+            defeatMonster();
+        }
     }
 }
 function dodge(){
