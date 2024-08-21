@@ -176,11 +176,14 @@ function attack(){
         lose();
     }else if(monsterHealth <= 0){
         if(fighting === 2){//Validando que sea el monstruo dragon
-            wingame();
+            winGame();
         }else{
             defeatMonster();
         }
     }
+}
+function getMonsterAttackValue(level){
+    
 }
 function dodge(){
     text.innerText = "You dodge the attack from the "+ monsters[fighting].name;
