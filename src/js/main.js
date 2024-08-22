@@ -233,6 +233,9 @@ function restart(){
 function easterEgg(){
     update(locations[7]);
 }
+function pick(guess){
+
+}
 //initialize buttons.
 button1.onclick = goStore;
 button2.onclick = goToCave;
