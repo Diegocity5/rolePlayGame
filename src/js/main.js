@@ -236,6 +236,12 @@ function easterEgg(){
 function pick(guess){
 
 }
+function pickTwo(){
+    pick(2);
+}
+function pickEight(){
+    pick(8);
+}
 //initialize buttons.
 button1.onclick = goStore;
 button2.onclick = goToCave;
