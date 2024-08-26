@@ -248,6 +248,10 @@ function pick(guess){
     for (let i=0; i<numbers.length; i++) {
         text.innerText += numbers[i]+"\n";
     }
+    //El metodo includes me permite chekear si esta un elemento en un array devolviendome un booleano.
+    if(numbers.includes(guess)){
+
+    }
 }
 function pickTwo(){
     pick(2);
