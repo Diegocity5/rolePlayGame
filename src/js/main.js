@@ -250,7 +250,9 @@ function pick(guess){
     }
     //El metodo includes me permite chekear si esta un elemento en un array devolviendome un booleano.
     if(numbers.includes(guess)){
-
+        text.innerText += "Right! You win 20 gold!";
+        gold += 20;
+        goldText.innerText = gold;
     }
 }
 function pickTwo(){
