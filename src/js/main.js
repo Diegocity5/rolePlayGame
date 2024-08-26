@@ -190,7 +190,7 @@ function attack(){
     if(health <= 0){
         lose();
     }else if(monsterHealth <= 0){
-        if(fighting === 2){//Validando que sea el monstruo dragon
+        if(fighting === monsters.length - 1){//Validando que sea el monstruo dragon
             winGame();
         }else{
             defeatMonster();
@@ -215,7 +215,7 @@ function dodge(){
 }
 
 function defeatMonster(){
-    gold += monsters[fighting].level * 6.7;//Sumando oro cuando se derrete el monstruo
+    gold += Math.floor(monsters[fighting].level * 6.7);//Sumando oro cuando se derrete el monstruo
     xp += monsters[fighting].level;//Sumando experiencia al derrotar un monstruo
     goldText.innerText = gold;
     xpText.innerText = xp;
