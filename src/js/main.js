@@ -26,7 +26,7 @@ const weapons = [
 ];
 const monsters = [
     {name: "slime", level: 2, health: 15},
-    {name: "fanged beast", level: 8, health: 60},
+    {name: "sasquatch", level: 12, health: 60},
     {name: "dragon", level: 20, health: 300}
 ];
 /*Podrás visitar diferentes lugares como la tienda, la cueva y la plaza del pueblo.
@@ -46,8 +46,8 @@ const locations = [
     },
     {
         name: "cave",
-        "button text": ["Fight slime", "Fight fanged beast", "Go to town square"],
-        "button functions": [fightSlime, fightBeast, goTown],
+        "button text": ["Fight slime", "Fight sasquatch", "Go to town square"],
+        "button functions": [fightSlime, fightSasquatch, goTown],
         text: "You enter the cave. You see some monsters."
     },
     {
@@ -89,6 +89,7 @@ button3.onclick = fightDragon;
 
 function update(location){
     monsterStats.style.display = "none";
+
     button1.innerText = location["button text"][0];
     button2.innerText = location["button text"][1];
     button3.innerText = location["button text"][2];
@@ -157,7 +158,7 @@ function fightSlime(){
     fighting  = 0;
     goFight();
 }
-function fightBeast(){
+function fightSasquatch(){
     fighting = 1;
     goFight();
 }
@@ -165,6 +166,7 @@ function fightDragon(){
     fighting = 2;
     goFight();
 }
+
 function goFight(){
     update(locations[3]);
     monsterHealth = monsters[fighting].health;//Asignando la salud del mostruo actual
