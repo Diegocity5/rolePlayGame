@@ -1,6 +1,6 @@
 let xp = 0;
 let health = 100;
-let gold = 250;
+let gold = 50;
 let currentWeaponIndex = 0;
 let fighting;
 let monsterHealth;
@@ -81,6 +81,11 @@ const locations = [
     }
 ];
 
+//initialize buttons.
+button1.onclick = goStore;
+button2.onclick = goToCave;
+button3.onclick = fightDragon;
+
 function update(location){
     monsterStats.style.display = "none";
     button1.innerText = location["button text"][0];
@@ -93,15 +98,12 @@ function update(location){
     
     text.innerHTML = location.text;
 }
-
 function goTown(){
     update(locations[0]);
 }
-
 function goStore(){
     update(locations[1]);
 }
-
 function goToCave(){
     update(locations[2]);
 }
@@ -268,7 +270,3 @@ function pickTwo(){
 function pickEight(){
     pick(8);
 }
-//initialize buttons.
-button1.onclick = goStore;
-button2.onclick = goToCave;
-button3.onclick = fightDragon;
