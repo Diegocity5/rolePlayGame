@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-color: #0a0a23;
 }
@@ -28,6 +33,16 @@ body {
 }
 .stat {
     padding-right: 10px;
+}
+aside {
+    width: 80px;
+    height: 80px;
+}
+figure {
+    height: 100%;
+    background-image: url(https://res.cloudinary.com/duiqvvjam/image/upload/v1724728473/monsters-sprite_lsgkjn.png);
+    background-repeat: no-repeat;
+    background-size: 157px;
 }
 button {
     cursor: pointer;

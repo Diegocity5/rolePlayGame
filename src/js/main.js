@@ -16,6 +16,7 @@ const goldText = document.querySelector('#goldText');
 const monsterStats = document.querySelector('#monsterStats');
 const monsterName = document.querySelector('#monsterName');
 const monsterHealthText = document.querySelector('#monsterHealth');
+const monsterImg = document.querySelector("#monsterImg");
 
 const weapons = [
     {name: "stick", power:5},
@@ -25,9 +26,9 @@ const weapons = [
     {name: "sword", power:100}
 ];
 const monsters = [
-    {name: "slime", level: 2, health: 15},
-    {name: "sasquatch", level: 12, health: 60},
-    {name: "dragon", level: 20, health: 300}
+    {name: "slime", level: 2, health: 15, coords:"-80px 0px"},
+    {name: "sasquatch", level: 12, health: 60, coords:"0px -78px"},
+    {name: "dragon", level: 20, health: 300, coords:"2px 2px"}
 ];
 /*Podrás visitar diferentes lugares como la tienda, la cueva y la plaza del pueblo.
 Deberá crear una estructura de datos que contendrá las diferentes ubicaciones.*/
@@ -173,6 +174,8 @@ function goFight(){
     monsterStats.style.display = "block";//Estaba oculto estadisticas del monstruo pero ahora es visible
     monsterName.innerText = monsters[fighting].name;
     monsterHealthText.innerText = monsterHealth;
+
+    monsterImg.style.backgroundPosition = monsters[fighting].coords;
 }
 function attack(){
     text.innerText = "The "+monsters[fighting].name+" attacks.";
